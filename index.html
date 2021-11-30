@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ИНЕРИ - Инвестиции в недвижимость</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images\icon_INERI.svg" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/jquery.mb.YTPlayer.js"></script>
+    <script src="scripts/scrolling.js"></script>
+
+    <script type="text/javascript">
+        $( () => {
+            $('#main').on('click', () => {
+                $('html,body').animate({
+                    scrollTop: 0
+                },500);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo" id="logo">ИНЕРИ logo</div>
+        <div class="menu">
+            <div href="#" id="main" class="menu-item current"><div class="icon-home filter-white" style="margin-right: 10px;"></div>Главная</div>
+            <div href="#" id="catalog" class="menu-item hide"><div class="icon-home-purchasing-2 filter-white" style="margin-right: 10px;"></div>Каталог</div>
+            <div href="#" id="investing" class="menu-item hide"><div class="icon-growth filter-white" style="margin-right: 10px;"></div>Инвестиции</div>
+            <div href="#" id="contacts" class="menu-item"><div class="icon-call-point-2 filter-white" style="margin-right: 10px;"></div>Контакты</div>
+            <div href="#" id="vacancies" class="menu-item"><div class="icon-job filter-white" style="margin-right: 10px;"></div>Вакансии</div>
+            <div href="#" id="account" class="menu-item hide"><div class="icon-user filter-white" style="margin-right: 10px;"></div>Личный кабинет</div>
+
+            <div href="#" class="menu-item only-icon current hide"><div class="icon-home filter-white"></div></div>
+            <div href="#" class="menu-item only-icon hide"><div class="icon-home-purchasing-2 filter-white"></div></div>
+            <div href="#" class="menu-item only-icon hide"><div class="icon-growth filter-white"></div></div>
+            <div href="#" class="menu-item only-icon hide"><div class="icon-call-point-2 filter-white"></div></div>
+            <div href="#" class="menu-item only-icon hide"><div class="icon-job filter-white"></div></div>
+            <div href="#" class="menu-item only-icon hide"><div class="icon-user filter-white"></div></div>
+        </div>
+    </div>
+
+    <!-- 1. Главный слайд -->
+    <div id="slide1" class="slide-main-video">
+        <div class="circle-border" style="position: relative; top: 15%; left: 15%">Команда ООО "ИНЕРИ"</div>
+        <div style="position: relative; width: fit-content; top: 16%; left: 15%; padding-left: 35px">поможет Вам выгодно вложить</br>
+        сбережения в недвижимость</div>
+
+        <div href="#slide2" id="button1" class="button-type-0" style="position: absolute; top: 70%; left: 45%;">Узнать как<div class="icon-down filter-white" style="margin-left: 15px; width: 25px"></div></div>
+        <script type="text/javascript">
+            $( () => {
+                $('#button1').on('click', function(e){
+                    $('html,body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top
+                    },500);
+                    e.preventDefault();
+                });
+            });
+        </script>
+
+
+        <div class="player" data-property="{videoURL:'S_dfq9rFWAE', ratio:'auto', mask:'./images/photo_moscow.jpg', abundance:.3, anchor:'center,center', startAt: 9, stopAt:145, containment:'#slide1', showControls:false, autoPlay:true, loop:true, mute:true, opacity:1, addRaster:true, playOnlyIfVisible:false, quality:'default', addFilters:{grayscale: 0, sepia: 0, contrast: 0, saturate: 0, brightness: 0, blur: 1, opacity: 60}}"></div>
+        <script>
+            jQuery(".player").YTPlayer({useOnMobile:true, mobileFallbackImage:"images/photo_moscow.jpg"});
+        </script>
+    </div>
+
+    <!-- 2. Оказываем услуги по продаже и аренде -->
+    <div class="slide-darkblue" id="slide2">
+
+    </div>
+
+    <!-- 3. Подберём для вас объект стоимостью ниже рынка -->
+    <div class="slide-white" id="slide3">
+
+    </div>
+
+    <!-- 4. Инвестиции в недвижимость это выгодно! -->
+    <div class="slide-darkblue" id="slide4">
+
+    </div>
+
+    <!-- 4. Готовы рассмотреть выкуп вашего объекта -->
+    <div class="slide-darkblue" id="slide5">
+
+    </div>
+
+    <!-- 5. С нами ипотека проще -->
+    <div class="slide-white" id="slide6" style="background-image: url('./images/photo_white-1866105.jpg'); background-position: center; background-size: cover;">
+
+    </div>
+
+    <!-- 6. Сделка на расстоянии -->
+    <div class="slide-darkblue" id="slide7">
+
+    </div>
+
+    <div class="bottom" id="bottom">
+
+    </div>
+</body>
+</html>
