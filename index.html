@@ -64,83 +64,30 @@
             <a href="#"><div id="menu-catalog" class="menu-item hide"><div class="icon icon-home-purchasing-2 filter-white" style="margin-right: 10px;"></div>Каталог</div></a>
             <a href="#"><div id="menu-investing" class="menu-item hide"><div class="icon icon-growth filter-white" style="margin-right: 10px;"></div>Инвестиции</div></a>
             <a href="./html/contacts.html"><div id="menu-contacts" class="menu-item"><div class="icon icon-call-point-2 filter-white" style="margin-right: 10px;"></div>Контакты</div></a>
-            <a href="#"><div id="menu-vacancies" class="menu-item"><div class="icon icon-job filter-white" style="margin-right: 10px;"></div>Вакансии</div></a>
+            <a href="./html/vacancies.html"><div id="menu-vacancies" class="menu-item"><div class="icon icon-job filter-white" style="margin-right: 10px;"></div>Вакансии</div></a>
             <a href="#"><div id="menu-account" class="menu-item hide"><div class="icon icon-user filter-white" style="margin-right: 10px;"></div>Личный кабинет</div></a>
 
             <a href="#"><div id="menu-main-mini" class="menu-item only-icon current"><div class="icon icon-home filter-white"></div></div></a>
             <a href="#"><div id="menu-catalog-mini" class="menu-item only-icon hide"><div class="icon icon-home-purchasing-2 filter-white"></div></div></a>
             <a href="#"><div id="menu-investing-mini" class="menu-item only-icon hide"><div class="icon icon-growth filter-white"></div></div></a>
             <a href="./html/contacts.html"><div id="menu-contacts-mini" class="menu-item only-icon "><div class="icon icon-call-point-2 filter-white"></div></div></a>
-            <a href="#"><div id="menu-vacancies-mini" class="menu-item only-icon "><div class="icon icon-job filter-white"></div></div></a>
+            <a href="./html/vacancies.html"><div id="menu-vacancies-mini" class="menu-item only-icon "><div class="icon icon-job filter-white"></div></div></a>
             <a href="#"><div id="menu-account-mini" class="menu-item only-icon hide"><div class="icon icon-user filter-white"></div></div></a>
         </div>
     </div>
-
-    <script type="text/javascript">
-        var scrolltotop={
-            setting:{
-                startline:500,
-                scrollto:0,
-                scrollduration:1e3,
-                fadeduration:[500,100]
-            },
-            controlattrs:{
-                offsetx:5,
-                offsety:5
-            },
-            anchorkeyword:"#top",
-            state:{
-                isvisible:!1,
-                shouldvisible:!1
-            },
-            scrollup:function() {
-                this.cssfixedsupport || this.$control.css({opacity:0});
-                var t = isNaN(this.setting.scrollto) ? this.setting.scrollto:parseInt(this.setting.scrollto);
-                t = "string" == typeof t && 1 == jQuery("#"+t).length ? jQuery("#" + t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)
-            },
-            togglecontrol:function() {
-                var t = jQuery(window).scrollTop();
-                this.cssfixedsupport,
-                this.state.shouldvisible = t >= this.setting.startline ? !0:!1,
-                this.state.shouldvisible && !this.state.isvisible ? (this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]), this.state.isvisible =! 0) : 0 == this.state.shouldvisible && this.state.isvisible && (this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)
-            },
-            init:function() {
-                jQuery(document).ready(function(t) {
-                    var o=scrolltotop,s=document.all;
-                    o.cssfixedsupport =! s || s && "CSS1Compat" == document.compatMode && window.XMLHttpRequest,
-                    o.$body = t(window.opera ? "CSS1Compat" == document.compatMode ? "html":"body":"html,body"),
-                    o.$control = t('<div id="go-top" class="go-top" style="opacity: 0"></div>').attr({title:"Прокрутить вверх"}).click(function()
-                    {
-                        return o.scrollup(), !1
-                    }).appendTo("body"),
-                    document.all && !window.XMLHttpRequest && "" != o.$control.text() && o.$control.css({width:o.$control.width()}),
-                    o.togglecontrol(),
-                    t('a[href="'+o.anchorkeyword+'"]').click(function()
-                    {
-                        return o.scrollup(),!1
-                    }),
-                    t(window).bind("scroll resize", function(t)
-                    {
-                        o.togglecontrol()
-                    })
-                })
-            }
-        };
-        scrolltotop.init();
-    </script>
 
     <!-- 1. Главный слайд -->
     <div id="slide1" class="slide-main-video">
         <div id="content-slide1" class="content">
             <div class="circle-border" data-aos="fade-up" data-aos-duration="1000" style="position: relative; top: 20%;">Команда ООО "ИНЕРИ"</div>
-            <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="800" style="position: relative; width: fit-content; top: 21%; padding-left: 35px; text-align: left;">поможет Вам выгодно вложить</br>
+            <div id="index-slide1-text" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">поможет Вам выгодно вложить</br>
             сбережения в недвижимость</div>
 
-            <div href="#slide2" id="button1" class="button-right-icon-type-0 animate-push-me" data-aos="zoom-in" data-aos-delay="2000">Узнать как<div class="icon icon-down filter-white" style="margin-left: 15px; width: 25px"></div></div>
+            <div href="#slide2" id="index-button1" class="button-right-icon-type-0 animate-push-me" data-aos="zoom-in" data-aos-delay="2000">Узнать как<div class="icon icon-down filter-white"></div></div>
 
             <script type="text/javascript">
                 $( () => {
-                    $('#button1').on('click', function(e){
+                    $('#index-button1').on('click', function(e){
                         $('html,body').animate({
                             scrollTop: $($(this).attr('href')).offset().top
                         },500);
@@ -148,7 +95,6 @@
                     });
                 });
             </script>
-
 
             <div class="player" data-property="{videoURL:'S_dfq9rFWAE', ratio:'auto', mask:'./images/photo_moscow_1080.jpg', abundance:.3, anchor:'center,center', startAt: 9, stopAt:145, containment:'#slide1', showControls:false, autoPlay:true, loop:true, mute:true, opacity:1, addRaster:true, playOnlyIfVisible:false, quality:'default', addFilters:{grayscale: 0, sepia: 0, contrast: 0, saturate: 0, brightness: 0, blur: 1, opacity: 60}}"></div>
         </div>
@@ -165,7 +111,7 @@
         <div class="comment" data-aos="fade-up" style="color: #EDEEF0; position: relative; top: -13%">Для уточнения рыночной стоимости или арендной ставки вашего объекта,</br>
         можете заполнить анкету и наши специалисты ответят Вам</div>
 
-        <div id="button2" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="1000" style="position: relative; top: 0%;"><div class="icon icon-list filter-white" style="margin-right: 15px; width: 23px"></div>Заполнить анкету</div>
+        <div id="index-button2" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="1000" style="position: relative; top: 0%;"><div class="icon icon-list filter-white"></div>Заполнить анкету</div>
     </div>
 
     <!-- 3. Подберём для вас объект стоимостью ниже рынка -->
@@ -185,7 +131,7 @@
             </div>
 
             <div id="container-button3-1">
-                <div id="button3" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2500"><div class="icon icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Получить консультацию</div>
+                <div id="index-button3" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2500"><div class="icon icon-call filter-white"></div>Получить консультацию</div>
             </div>
         </div>
     </div>
@@ -227,7 +173,7 @@
         </div>
 
         <div style="text-align: center; position: relative; top: 60%;">
-            <div id="button4" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500" style="position: relative; top: 0%;"><div class="icon icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Узнать все условия</div>
+            <div id="index-button4" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500" style="position: relative; top: 0%;"><div class="icon icon-call filter-white"></div>Узнать все условия</div>
         </div>
     </div>
 
@@ -240,7 +186,7 @@
                 различных банков с пониженной ставкой</div>
 
             <div style="text-align: center; position: relative; top: 30%;">
-                <div id="button6" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2000"><div class="icon icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Получить консультацию</div>
+                <div id="index-button6" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2000"><div class="icon icon-call filter-white"></div>Получить консультацию</div>
             </div>
         </div>
     </div>
@@ -254,16 +200,16 @@
             <div class="text bold" data-aos="fade-up" style="color: #EDEEF0; position: relative; top: -3%">Мы поможем провести межрегиональную сделку.</div>
         </div>
 
-        <div style="text-align: center; position: relative; top: 20%;">
-            <div id="button7" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500"><div class="icon icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Связаться с нами</div>
+        <div id="container-button7-1">
+            <div id="index-button7" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500"><div class="icon icon-call filter-white"></div>Связаться с нами</div>
         </div>
     </div>
 
     <div class="bottom" id="bottom">
         <div class="bottom-flex-item-left">
-            Главная</br>
-            Контакты</br>
-            Вакансии
+            <a href="#">Главная</a></br>
+            <a href="./html/contacts.html">Контакты</a></br>
+            <a href="./html/vacancies.html">Вакансии</a>
         </div>
         <div class="bottom-flex-item-right">
             © 2021 ООО “ИНЕРИ”</br>

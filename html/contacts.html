@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакты - Агенство недвижимости в Москве ИНЕРИ</title>
-    <meta name="description" content="Агентство недвижимости в Москве ИНЕРИ. Инвестиции в недвижимость. Выкуп объектов. Торги по банкротству.">
+    <meta name="description" content="Контакты. Агентство недвижимости в Москве ИНЕРИ. Инвестиции в недвижимость. Выкуп объектов. Торги по банкротству.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../styles/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -40,14 +40,14 @@
     </script>
     <script type="text/javascript">
         $( () => {
-            $('#menu-main').on('click', () => {
+            $('#menu-contacts').on('click', () => {
                 $('html,body').animate({
                     scrollTop: 0
                 },500);
             });
         });
         $( () => {
-            $('#menu-main-mini').on('click', () => {
+            $('#menu-contacts-mini').on('click', () => {
                 $('html,body').animate({
                     scrollTop: 0
                 },500);
@@ -62,70 +62,17 @@
             <a href="#"><div id="menu-catalog" class="menu-item hide"><div class="icon icon-home-purchasing-2 filter-white" style="margin-right: 10px;"></div>Каталог</div></a>
             <a href="#"><div id="menu-investing" class="menu-item hide"><div class="icon icon-growth filter-white" style="margin-right: 10px;"></div>Инвестиции</div></a>
             <a href="#"><div id="menu-contacts" class="menu-item current"><div class="icon icon-call-point-2 filter-white" style="margin-right: 10px;"></div>Контакты</div></a>
-            <a href="#"><div id="menu-vacancies" class="menu-item"><div class="icon icon-job filter-white" style="margin-right: 10px;"></div>Вакансии</div></a>
+            <a href="./vacancies.html"><div id="menu-vacancies" class="menu-item"><div class="icon icon-job filter-white" style="margin-right: 10px;"></div>Вакансии</div></a>
             <a href="#"><div id="menu-account" class="menu-item hide"><div class="icon icon-user filter-white" style="margin-right: 10px;"></div>Личный кабинет</div></a>
 
             <a href="../index.html"><div id="menu-main-mini" class="menu-item only-icon"><div class="icon icon-home filter-white"></div></div></a>
             <a href="#"><div id="menu-catalog-mini" class="menu-item only-icon hide"><div class="icon icon-home-purchasing-2 filter-white"></div></div></a>
             <a href="#"><div id="menu-investing-mini" class="menu-item only-icon hide"><div class="icon icon-growth filter-white"></div></div></a>
             <a href="#"><div id="menu-contacts-mini" class="menu-item only-icon current"><div class="icon icon-call-point-2 filter-white"></div></div></a>
-            <a href="#"><div id="menu-vacancies-mini" class="menu-item only-icon "><div class="icon icon-job filter-white"></div></div></a>
+            <a href="./vacancies.html"><div id="menu-vacancies-mini" class="menu-item only-icon "><div class="icon icon-job filter-white"></div></div></a>
             <a href="#"><div id="menu-account-mini" class="menu-item only-icon hide"><div class="icon icon-user filter-white"></div></div></a>
         </div>
     </div>
-
-    <script type="text/javascript">
-        var scrolltotop={
-            setting:{
-                startline:500,
-                scrollto:0,
-                scrollduration:1e3,
-                fadeduration:[500,100]
-            },
-            controlattrs:{
-                offsetx:5,
-                offsety:5
-            },
-            anchorkeyword:"#top",
-            state:{
-                isvisible:!1,
-                shouldvisible:!1
-            },
-            scrollup:function() {
-                this.cssfixedsupport || this.$control.css({opacity:0});
-                var t = isNaN(this.setting.scrollto) ? this.setting.scrollto:parseInt(this.setting.scrollto);
-                t = "string" == typeof t && 1 == jQuery("#"+t).length ? jQuery("#" + t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)
-            },
-            togglecontrol:function() {
-                var t = jQuery(window).scrollTop();
-                this.cssfixedsupport,
-                    this.state.shouldvisible = t >= this.setting.startline ? !0:!1,
-                    this.state.shouldvisible && !this.state.isvisible ? (this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]), this.state.isvisible =! 0) : 0 == this.state.shouldvisible && this.state.isvisible && (this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)
-            },
-            init:function() {
-                jQuery(document).ready(function(t) {
-                    var o=scrolltotop,s=document.all;
-                    o.cssfixedsupport =! s || s && "CSS1Compat" == document.compatMode && window.XMLHttpRequest,
-                        o.$body = t(window.opera ? "CSS1Compat" == document.compatMode ? "html":"body":"html,body"),
-                        o.$control = t('<div id="go-top" class="go-top" style="opacity: 0"></div>').attr({title:"Прокрутить вверх"}).click(function()
-                        {
-                            return o.scrollup(), !1
-                        }).appendTo("body"),
-                    document.all && !window.XMLHttpRequest && "" != o.$control.text() && o.$control.css({width:o.$control.width()}),
-                        o.togglecontrol(),
-                        t('a[href="'+o.anchorkeyword+'"]').click(function()
-                        {
-                            return o.scrollup(),!1
-                        }),
-                        t(window).bind("scroll resize", function(t)
-                        {
-                            o.togglecontrol()
-                        })
-                })
-            }
-        };
-        scrolltotop.init();
-    </script>
 
     <div id="contacts-main" class="slide-darkblue" style="background-image: url('../images/photo_dark-wall-empty-room-with-plants-floor-3d-rendering_1080.jpg'); background-position: center; background-size: cover; text-align: center;">
         <div id="contacts-content-main" class="content">
@@ -134,7 +81,7 @@
                 <div id="contacts-content-main-flex-left">
                     <div class="heading-with-icon" data-aos="fade-up" data-aos-delay="300" ">
                         <div class="icon-container">
-                            <div class="circle" style="width: 70%; height: 70%; margin: 15%;"></div>
+                            <div class="figure-circle" style="width: 70%; height: 70%; margin: 15%;"></div>
                             <div class="icon icon-phone filter-dove-blue"></div>
                         </div>Телефон
                     </div></br>
@@ -154,7 +101,7 @@
                     </div>
                     <div class="heading-with-icon" data-aos="fade-up" data-aos-delay="400" ">
                         <div class="icon-container">
-                            <div class="box" style="width: 95%; height: 70%; margin: 15% 2.5% 15% 2.5%;"></div>
+                            <div class="figure-box" style="width: 95%; height: 70%; margin: 15% 2.5% 15% 2.5%;"></div>
                             <div class="icon icon-mail filter-dove-blue"></div>
                         </div>Почта
                     </div></br>
@@ -163,7 +110,7 @@
                     </div>
                     <div class="heading-with-icon" data-aos="fade-up" data-aos-delay="500" ">
                         <div class="icon-container">
-                            <div class="circle" style="width: 50%; height: 50%; margin: 10% 25% 15% 25%;"></div>
+                            <div class="figure-circle" style="width: 50%; height: 50%; margin: 10% 25% 15% 25%;"></div>
                             <div class="icon icon-geopoint filter-dove-blue"></div>
                         </div>Адрес
                     </div></br>
@@ -175,6 +122,18 @@
                 <div id="contacts-content-main-flex-right">
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="bottom" id="bottom">
+        <div class="bottom-flex-item-left">
+            <a href="../index.html">Главная</a></br>
+            <a href="#">Контакты</a></br>
+            <a href="./vacancies.html">Вакансии</a>
+        </div>
+        <div class="bottom-flex-item-right">
+            © 2021 ООО “ИНЕРИ”</br>
+            Все права защищены.</br>
+            developer: @alexsnitol
         </div>
     </div>
 </body>
