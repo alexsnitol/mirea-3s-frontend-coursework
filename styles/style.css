@@ -1161,6 +1161,14 @@ a {
         top: -10%;
     }
 
+    #content-slide4 .title {
+        padding-bottom: 30px;
+    }
+
+    #content-slide4 .text {
+        padding-bottom: 30px;
+    }
+
     .rise-indicator {
         height: 28px;
         line-height: 28px;
