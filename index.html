@@ -5,7 +5,7 @@
     <title>Агенство недвижимости в Москве ИНЕРИ</title>
     <meta name="description" content="Агентство недвижимости в Москве ИНЕРИ. Инвестиции в недвижимость. Выкуп объектов. Торги по банкротству.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./images/icon_INERI_1.svg" type="image/x-icon">
 
@@ -42,14 +42,14 @@
     </script>
     <script type="text/javascript">
         $( () => {
-            $('#main').on('click', () => {
+            $('#menu-main').on('click', () => {
                 $('html,body').animate({
                     scrollTop: 0
                 },500);
             });
         });
         $( () => {
-            $('#main-mini').on('click', () => {
+            $('#menu-main-mini').on('click', () => {
                 $('html,body').animate({
                     scrollTop: 0
                 },500);
@@ -60,19 +60,19 @@
     <div class="header">
         <div class="logo" id="logo">ИНЕРИ</div>
         <div class="menu">
-            <div href="#" id="main" class="menu-item current"><div class="icon-home filter-white" style="margin-right: 10px;"></div>Главная</div>
-            <div href="#" id="catalog" class="menu-item hide"><div class="icon-home-purchasing-2 filter-white" style="margin-right: 10px;"></div>Каталог</div>
-            <div href="#" id="investing" class="menu-item hide"><div class="icon-growth filter-white" style="margin-right: 10px;"></div>Инвестиции</div>
-            <div href="#" id="contacts" class="menu-item"><div class="icon-call-point-2 filter-white" style="margin-right: 10px;"></div>Контакты</div>
-            <div href="#" id="vacancies" class="menu-item"><div class="icon-job filter-white" style="margin-right: 10px;"></div>Вакансии</div>
-            <div href="#" id="account" class="menu-item hide"><div class="icon-user filter-white" style="margin-right: 10px;"></div>Личный кабинет</div>
+            <a href="#"><div id="menu-main" class="menu-item current"><div class="icon icon-home filter-white" style="margin-right: 10px;"></div>Главная</div></a>
+            <a href="#"><div id="menu-catalog" class="menu-item hide"><div class="icon icon-home-purchasing-2 filter-white" style="margin-right: 10px;"></div>Каталог</div></a>
+            <a href="#"><div id="menu-investing" class="menu-item hide"><div class="icon icon-growth filter-white" style="margin-right: 10px;"></div>Инвестиции</div></a>
+            <a href="./html/contacts.html"><div id="menu-contacts" class="menu-item"><div class="icon icon-call-point-2 filter-white" style="margin-right: 10px;"></div>Контакты</div></a>
+            <a href="#"><div id="menu-vacancies" class="menu-item"><div class="icon icon-job filter-white" style="margin-right: 10px;"></div>Вакансии</div></a>
+            <a href="#"><div id="menu-account" class="menu-item hide"><div class="icon icon-user filter-white" style="margin-right: 10px;"></div>Личный кабинет</div></a>
 
-            <div href="#" id="main-mini" class="menu-item only-icon current"><div class="icon-home filter-white"></div></div>
-            <div href="#" id="catalog-mini" class="menu-item only-icon hide"><div class="icon-home-purchasing-2 filter-white"></div></div>
-            <div href="#" id="investing-mini" class="menu-item only-icon hide"><div class="icon-growth filter-white"></div></div>
-            <div href="#" id="contacts-mini" class="menu-item only-icon "><div class="icon-call-point-2 filter-white"></div></div>
-            <div href="#" id="vacancies-mini" class="menu-item only-icon "><div class="icon-job filter-white"></div></div>
-            <div href="#" id="account-mini" class="menu-item only-icon hide"><div class="icon-user filter-white"></div></div>
+            <a href="#"><div id="menu-main-mini" class="menu-item only-icon current"><div class="icon icon-home filter-white"></div></div></a>
+            <a href="#"><div id="menu-catalog-mini" class="menu-item only-icon hide"><div class="icon icon-home-purchasing-2 filter-white"></div></div></a>
+            <a href="#"><div id="menu-investing-mini" class="menu-item only-icon hide"><div class="icon icon-growth filter-white"></div></div></a>
+            <a href="./html/contacts.html"><div id="menu-contacts-mini" class="menu-item only-icon "><div class="icon icon-call-point-2 filter-white"></div></div></a>
+            <a href="#"><div id="menu-vacancies-mini" class="menu-item only-icon "><div class="icon icon-job filter-white"></div></div></a>
+            <a href="#"><div id="menu-account-mini" class="menu-item only-icon hide"><div class="icon icon-user filter-white"></div></div></a>
         </div>
     </div>
 
@@ -136,7 +136,7 @@
             <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="800" style="position: relative; width: fit-content; top: 21%; padding-left: 35px; text-align: left;">поможет Вам выгодно вложить</br>
             сбережения в недвижимость</div>
 
-            <div href="#slide2" id="button1" class="button-right-icon-type-0 animate-push-me" data-aos="zoom-in" data-aos-delay="2000">Узнать как<div class="icon-down filter-white" style="margin-left: 15px; width: 25px"></div></div>
+            <div href="#slide2" id="button1" class="button-right-icon-type-0 animate-push-me" data-aos="zoom-in" data-aos-delay="2000">Узнать как<div class="icon icon-down filter-white" style="margin-left: 15px; width: 25px"></div></div>
 
             <script type="text/javascript">
                 $( () => {
@@ -165,7 +165,7 @@
         <div class="comment" data-aos="fade-up" style="color: #EDEEF0; position: relative; top: -13%">Для уточнения рыночной стоимости или арендной ставки вашего объекта,</br>
         можете заполнить анкету и наши специалисты ответят Вам</div>
 
-        <div id="button2" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="1000" style="position: relative; top: 0%;"><div class="icon-list filter-white" style="margin-right: 15px; width: 23px"></div>Заполнить анкету</div>
+        <div id="button2" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="1000" style="position: relative; top: 0%;"><div class="icon icon-list filter-white" style="margin-right: 15px; width: 23px"></div>Заполнить анкету</div>
     </div>
 
     <!-- 3. Подберём для вас объект стоимостью ниже рынка -->
@@ -185,7 +185,7 @@
             </div>
 
             <div id="container-button3-1">
-                <div id="button3" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2500"><div class="icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Получить консультацию</div>
+                <div id="button3" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2500"><div class="icon icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Получить консультацию</div>
             </div>
         </div>
     </div>
@@ -227,7 +227,7 @@
         </div>
 
         <div style="text-align: center; position: relative; top: 60%;">
-            <div id="button4" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500" style="position: relative; top: 0%;"><div class="icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Узнать все условия</div>
+            <div id="button4" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500" style="position: relative; top: 0%;"><div class="icon icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Узнать все условия</div>
         </div>
     </div>
 
@@ -240,7 +240,7 @@
                 различных банков с пониженной ставкой</div>
 
             <div style="text-align: center; position: relative; top: 30%;">
-                <div id="button6" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2000"><div class="icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Получить консультацию</div>
+                <div id="button6" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2000"><div class="icon icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Получить консультацию</div>
             </div>
         </div>
     </div>
@@ -255,7 +255,7 @@
         </div>
 
         <div style="text-align: center; position: relative; top: 20%;">
-            <div id="button7" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500"><div class="icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Связаться с нами</div>
+            <div id="button7" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500"><div class="icon icon-call filter-white" style="margin-right: 15px; width: 23px"></div>Связаться с нами</div>
         </div>
     </div>
 
