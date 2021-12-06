@@ -11,7 +11,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="../scripts/scrolling.js"></script>
+    <script src="./scripts/scrolling.js"></script>
 </head>
 <body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -54,6 +54,13 @@
             });
         });
     </script>
+    <script>
+        async function clipboardCopy(idObject) {
+            let text = document.getElementById(idObject).innerHTML;
+            text = text.replace()
+            await navigator.clipboard.writeText(text);
+        }
+    </script>
 
     <div class="header">
         <div class="logo" id="logo">ИНЕРИ</div>
@@ -86,16 +93,16 @@
                         </div>Телефон
                     </div></br>
                     <div class="subcontent" data-aos="fade-up" data-aos-delay="350" style="margin-bottom: 36px; vertical-align: middle;">
-                        <div class="text-in-circle-rectangle" style="display: inline-block">+7 953 267-08-85</div>
-                        <div id="contact-icons" style="position: relative; display: inline-block; width: fit-content;">
+                        <div class="text-in-circle-rectangle" style="display: inline-block"><div id="contacts-number" style="display: inline-block">+7 953 266-07-98</div><div id="copy-number" class="icon-copy filter-white" style="height: 100%" onclick="clipboardCopy('contacts-number')"></div></div>
+                        <div class="contact-icons" style="position: relative; display: inline-block; width: fit-content;">
                             <div class="icon-container">
-                                <div class="icon-whatsapp-color"></div>
+                                <a href="https://api.whatsapp.com/send?phone='+7 953 266-07-98'" target="_blank" title="Связаться через WhatsApp"><div class="icon-whatsapp-color"></div></a>
                             </div>
                             <div class="icon-container">
-                                <div class="icon-telegram-color"></div>
+                                <a href="https://t.me/alexsnitol" target="_blank" title="Связаться через Telegram"><div class="icon-telegram-color"></div></a>
                             </div>
                             <div class="icon-container">
-                                <div class="icon-viber-color"></div>
+                                <a href="viber://chat?number=+79532660798" title="Для связи через Viber должно быть установленно приложение"><div class="icon-viber-color"></div></a>
                             </div>
                         </div>
                     </div>
@@ -105,10 +112,15 @@
                             <div class="icon icon-mail filter-dove-blue"></div>
                         </div>Почта
                     </div></br>
-                    <div data-aos="fade-up" data-aos-delay="450" style="margin-bottom: 36px">
-                        <div class="text-in-circle-rectangle">er-ineri@mail.ru</div>
+                    <div class="subcontent" data-aos="fade-up" data-aos-delay="450" style="margin-bottom: 36px">
+                        <div class="text-in-circle-rectangle" style="display: inline-block"><div id="contacts-email" style="display: inline-block">er-ineri@mail.ru</div><div id="copy-email" class="icon-copy filter-white" style="height: 100%" onclick="clipboardCopy('contacts-email')"></div></div>
+                        <div class="contact-icons" style="position: relative; display: inline-block; width: fit-content;">
+                            <div class="icon-container">
+                                <a href="mailto:sslotin74@gmail.com" target="_blank" title="Открыть почту"><div class="icon-mail-sending-color" style="padding-top: 18%"></div></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="heading-with-icon" data-aos="fade-up" data-aos-delay="500" ">
+                    <div class="heading-with-icon" data-aos="fade-up" data-aos-delay="500">
                         <div class="icon-container">
                             <div class="figure-circle" style="width: 50%; height: 50%; margin: 10% 25% 15% 25%;"></div>
                             <div class="icon icon-geopoint filter-dove-blue"></div>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="shortcut icon" href="./images/icon_INERI_1.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/icon_INERI_1.svg" type="image/x-icon">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -55,6 +55,22 @@
                 },500);
             });
         });
+
+        $( () => {
+            $('#slide2-form-exit').on('click', () => {
+                $('#slide2-form').css({'display': 'none'});
+                $('#slide2-form').css({'opacity': '0'});
+                $('body').css({'overflow': 'auto'});
+            });
+        });
+
+        $( () => {
+            $('#index-button2').on('click', () => {
+                $('#slide2-form').css({'display': 'block'});
+                $('#slide2-form').css({'opacity': '1'});
+                $('body').css({'overflow': 'hidden'});
+            });
+        });
     </script>
 
     <div class="header">
@@ -74,6 +90,59 @@
             <a href="./html/vacancies.html"><div id="menu-vacancies-mini" class="menu-item only-icon "><div class="icon icon-job filter-white"></div></div></a>
             <a href="#"><div id="menu-account-mini" class="menu-item only-icon hide"><div class="icon icon-user filter-white"></div></div></a>
         </div>
+    </div>
+
+    <div id="slide2-form" class="form">
+        <form action="mailto:sslotin74@gmail.com" enctype="text/plain" method="post">
+            <div class="form-content">
+                <div class="row-name">
+                    <div class="name">
+                        Анкета
+                    </div>
+                    <div id="slide2-form-exit" class="icon-exit filter-white"></div>
+                </div>
+                <div class="row">
+                    <div class="label">Адрес объекта:</div>
+                    <div class="textbox"><input type="text" id="address" name="address" style="width: 95%"></div>
+                </div>
+                <div class="row">
+                    <div class="label">Квартира (необязательно):</div>
+                    <div class="textbox"><input type="text" id="apartment" name="apartment" style="width: 50px; text-align: center;"></div>
+                </div>
+                <div class="row">
+                    <div class="label">Площадь:</div>
+                    <div class="textbox"><input type="number" id="space" name="space" mix="0" style="width: 50px; text-align: center;"></div>
+                </div>
+                <div class="row">
+                    <div class="label">Этаж:</div>
+                    <div class="textbox"><input type="number" id="floor" name="floor" min="0" max="100" style="width: 50px; text-align: center;"></div>
+                </div>
+                <div class="row">
+                    <div class="label">Тип ремонта:</div>
+                    <div class="combobox">
+                        <select name="type_renovation">
+                            <option value="1">Без отделки</option>
+                            <option value="2">Советский</option>
+                            <option value="3">Обычный</option>
+                            <option value="4">Хороший</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">Желаемый срок реализации (в месяцах):</div>
+                    <div class="textbox"><input type="number" id="deadline" name="deadline" min="0" max="8" style="width: 50px; text-align: center;"></div>
+                </div>
+                <div class="row">
+                    <div class="label">Номер телефона: </div>
+                    <div class="textbox"><input type="text" id="tel" name="tel" style="width: 200px; text-align: center;"></div>
+                </div>
+                <div class="row" style="text-align: center">
+                    <div style="display: inline-block; width: 100%">
+                        <button type="submit" id="index-form1-button-send" class="button-right-icon-type-0">Отправить анкету<div class="icon icon-send-h2 filter-white"></div></button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- 1. Главный слайд -->
@@ -131,7 +200,7 @@
             </div>
 
             <div id="container-button3-1">
-                <div id="index-button3" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2500"><div class="icon icon-call filter-white"></div>Получить консультацию</div>
+                <a href="./html/contacts.html"><div id="index-button3" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2500"><div class="icon icon-call filter-white"></div>Получить консультацию</div></a>
             </div>
         </div>
     </div>
@@ -173,7 +242,7 @@
         </div>
 
         <div style="text-align: center; position: relative; top: 60%;">
-            <div id="index-button4" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500" style="position: relative; top: 0%;"><div class="icon icon-call filter-white"></div>Узнать все условия</div>
+            <a href="./html/contacts.html"><div id="index-button4" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500" style="position: relative; top: 0%;"><div class="icon icon-call filter-white"></div>Узнать все условия</div></a>
         </div>
     </div>
 
@@ -186,7 +255,7 @@
                 различных банков с пониженной ставкой</div>
 
             <div style="text-align: center; position: relative; top: 30%;">
-                <div id="index-button6" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2000"><div class="icon icon-call filter-white"></div>Получить консультацию</div>
+                <a href="./html/contacts.html"><div id="index-button6" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2000"><div class="icon icon-call filter-white"></div>Получить консультацию</div></a>
             </div>
         </div>
     </div>
@@ -201,7 +270,7 @@
         </div>
 
         <div id="container-button7-1">
-            <div id="index-button7" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500"><div class="icon icon-call filter-white"></div>Связаться с нами</div>
+            <a href="./html/contacts.html"><div id="index-button7" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500"><div class="icon icon-call filter-white"></div>Связаться с нами</div></a>
         </div>
     </div>
 
