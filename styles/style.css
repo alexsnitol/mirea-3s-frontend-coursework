@@ -1255,8 +1255,20 @@ select {
 }
 
 @media only screen and (max-width: 900px) {
-    .body {
+    body {
         font-size: 26px;
+    }
+
+    input {
+        font-size: 16px;
+
+        padding: 5px;
+    }
+
+    select {
+        font-size: 16px;
+
+        padding: 5px;
     }
 
     .slide-main-video {
@@ -1506,9 +1518,54 @@ select {
     .list-element .second-row-block {
         font-size: 18px;
     }
+
+    .form-content {
+        height: 100vh;
+
+        padding: 24px;
+
+        font-size: 18px;
+    }
+
+    .form-content .row {
+        padding-bottom: 10px;
+        flex-direction: column;
+
+        line-height: normal;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .form-content .row:last-child {
+        padding: 20px 0px 10px 0px;
+    }
+
+    .form-content .row-name {
+        margin-bottom: 14px;
+    }
+
+    .form-content .row-name .name {
+        font-size: 20px;
+    }
+
+    .form-content .row-name .icon-exit {
+        width: 22px;
+    }
+
+    .form-content .row .label {
+        padding-bottom: 5px;
+    }
 }
 
-@media only screen and (max-height: 360px) {
+@media only screen and (max-height: 600px) {
+    input {
+        font-size: 12px;
+    }
+
+    select {
+        font-size: 12px;
+    }
+
     #content-slide3 {
         padding-top: 25px;
     }
@@ -1524,6 +1581,18 @@ select {
     #content-slide6 {
         height: 30%;
         overflow: unset;
+    }
+
+    .form-content {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .form-content .row {
+        flex-direction: row;
+        padding-bottom: 0px;
+        line-height: 23px;
+        font-size: 14px;
     }
 }
 
