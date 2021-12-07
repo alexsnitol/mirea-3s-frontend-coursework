@@ -23,7 +23,7 @@ $( () => {
     });
 
     //Toggle Menu
-    $('#menu-toggle').on('click', () => {
+    /*$('#menu-toggle').on('click', () => {
         $('#menu-toggle').toggleClass('closeMenu');
         $('ul').toggleClass('showMenu');
 
@@ -31,7 +31,7 @@ $( () => {
             $('ul').removeClass('showMenu');
             $('#menu-toggle').removeClass('closeMenu');
         });
-    });
+    });*/
 
 });
 

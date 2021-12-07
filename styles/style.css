@@ -520,7 +520,7 @@ select {
 }
 
 .go-top {
-    content: url('/images/icon_up_bold_in_circle.svg');
+    content: url('../images/icon_up_bold_in_circle.svg');
 
     filter: invert(100%) opacity(20%);
 
@@ -1248,12 +1248,6 @@ select {
     }
 }
 
-@media only screen and (max-height: 560px) {
-    #contacts-main {
-        height: 560px;
-    }
-}
-
 @media only screen and (max-width: 900px) {
     body {
         font-size: 26px;
@@ -1272,7 +1266,7 @@ select {
     }
 
     .slide-main-video {
-        font-size: 26px;
+        font-size: 36px;
     }
 
     .slide-darkblue {
@@ -1586,6 +1580,7 @@ select {
     .form-content {
         padding: 10px;
         font-size: 14px;
+        width: 95%;
     }
 
     .form-content .row {
@@ -1593,6 +1588,12 @@ select {
         padding-bottom: 0px;
         line-height: 23px;
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-height: 560px) {
+    #contacts-main {
+        height: 650px;
     }
 }
 
@@ -1607,6 +1608,10 @@ select {
 
     .hide {
         display: none;
+    }
+
+    .slide-main-video {
+        font-size: 26px;
     }
 
     .container-graph {
