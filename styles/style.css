@@ -1591,9 +1591,9 @@ select {
     }
 }
 
-@media only screen and (max-height: 560px) {
+@media only screen and (max-height: 570px) {
     #contacts-main {
-        height: 650px;
+        height: 700px;
     }
 }
 
