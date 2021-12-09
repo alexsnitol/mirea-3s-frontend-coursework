@@ -67,13 +67,11 @@ select {
 .logo {
     position: absolute;
     width: fit-content;
-    height: 50px;
-    line-height: 50px;
     white-space: nowrap;
     left: 8.3%;
     top: 8px;
 
-    padding: 0px 15px 0px 15px;
+    padding: 12px 12px 12px 12px;
 
     background: #133264;
     border-radius: 8px;
@@ -87,6 +85,8 @@ select {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
+
+    transition: 0.1s;
 }
 
 .menu {
@@ -96,6 +96,8 @@ select {
 
     letter-spacing: 5px;
     font-size: 0;
+
+    transition: 0.1s;
 }
 
 .menu-item {
@@ -160,30 +162,40 @@ select {
     width: 100%;
     font-weight: 700;
     font-size: 72px;
+
+    transition: 0.1s;
 }
 
 .title {
     width: 100%;
     font-weight: 700;
     font-size: 52px;
+
+    transition: 0.1s;
 }
 
 .subtitle {
     width: 100%;
     font-weight: 700;
     font-size: 28px;
+
+    transition: 0.1s;
 }
 
 .subtitle2 {
     width: 100%;
     font-weight: 700;
     font-size: 36px;
+
+    transition: 0.1s;
 }
 
 .heading {
     width: 100%;
     font-weight: 700;
     font-size: 28px;
+
+    transition: 0.1s;
 }
 
 .heading-with-icon {
@@ -205,6 +217,8 @@ select {
     letter-spacing: 0;
     color: #F4F4F4;
     text-align: left;
+
+    transition: 0.1s;
 }
 
 .heading-with-icon .icon-container {
@@ -216,6 +230,8 @@ select {
     width: 100%;
     font-weight: 600;
     font-size: 24px;
+
+    transition: 0.1s;
 }
 
 .text-in-circle-rectangle {
@@ -229,12 +245,16 @@ select {
     color: #f4f4f4;
 
     background-color: #133264;
+
+    transition: 0.1s;
 }
 
 .comment {
     width: 100%;
     font-weight: 500;
     font-size: 18px;
+
+    transition: 0.1s;
 }
 
 .slide-main-video {
@@ -318,6 +338,8 @@ select {
     color: #F4F4F4;
 
     background-color: rgba(18, 157, 255, 0.8);;
+
+    transition: 0.1s;
 }
 
 .button-right-icon-type-0 {
@@ -464,6 +486,8 @@ select {
     counter-reset: my-awesome-counter;
     list-style: none;
     padding-left: 62px;
+
+    transition: 0.1s;
 }
 .circle-ol ol li {
     margin: 0 0 23px 0;
@@ -849,6 +873,8 @@ select {
     padding-left: 35px;
 
     text-align: left;
+
+    transition: 0.1s;
 }
 
 #index-button1 {
@@ -1226,7 +1252,7 @@ select {
     }
 
     #container-button3-1 {
-        top: 18%;
+        top: 24%;
     }
 
     #heading3-1 {
