@@ -162,16 +162,12 @@ select {
     width: 100%;
     font-weight: 700;
     font-size: 72px;
-
-    transition: 0.1s;
 }
 
 .title {
     width: 100%;
     font-weight: 700;
     font-size: 52px;
-
-    transition: 0.1s;
 }
 
 .subtitle {
@@ -186,8 +182,6 @@ select {
     width: 100%;
     font-weight: 700;
     font-size: 36px;
-
-    transition: 0.1s;
 }
 
 .heading {
@@ -217,8 +211,6 @@ select {
     letter-spacing: 0;
     color: #F4F4F4;
     text-align: left;
-
-    transition: 0.1s;
 }
 
 .heading-with-icon .icon-container {
@@ -230,8 +222,6 @@ select {
     width: 100%;
     font-weight: 600;
     font-size: 24px;
-
-    transition: 0.1s;
 }
 
 .text-in-circle-rectangle {
@@ -245,16 +235,12 @@ select {
     color: #f4f4f4;
 
     background-color: #133264;
-
-    transition: 0.1s;
 }
 
 .comment {
     width: 100%;
     font-weight: 500;
     font-size: 18px;
-
-    transition: 0.1s;
 }
 
 .slide-main-video {
@@ -338,8 +324,6 @@ select {
     color: #F4F4F4;
 
     background-color: rgba(18, 157, 255, 0.8);;
-
-    transition: 0.1s;
 }
 
 .button-right-icon-type-0 {
@@ -873,8 +857,6 @@ select {
     padding-left: 35px;
 
     text-align: left;
-
-    transition: 0.1s;
 }
 
 #index-button1 {
