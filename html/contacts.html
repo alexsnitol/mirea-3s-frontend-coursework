@@ -10,8 +10,8 @@
     <link rel="shortcut icon" href="../images/icon_INERI_1.svg" type="image/x-icon">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script src="./scripts/scrolling.js"></script>
+    <script src="../scripts/includeHTML.js"></script>
+    <script src="../scripts/scrolling.js"></script>
 </head>
 <body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -62,24 +62,7 @@
         }
     </script>
 
-    <div class="header">
-        <div class="logo logo-INERI" id="logo">ИНЕРИ</div>
-        <div class="menu">
-            <a href="../index.html"><div id="menu-main" class="menu-item"><div class="icon icon-home filter-white" style="margin-right: 10px;"></div>Главная</div></a>
-            <a href="#"><div id="menu-catalog" class="menu-item hide"><div class="icon icon-home-purchasing-2 filter-white" style="margin-right: 10px;"></div>Каталог</div></a>
-            <a href="#"><div id="menu-investing" class="menu-item hide"><div class="icon icon-growth filter-white" style="margin-right: 10px;"></div>Инвестиции</div></a>
-            <a href="#"><div id="menu-contacts" class="menu-item current"><div class="icon icon-call-point-2 filter-white" style="margin-right: 10px;"></div>Контакты</div></a>
-            <a href="./vacancies.html"><div id="menu-vacancies" class="menu-item"><div class="icon icon-job filter-white" style="margin-right: 10px;"></div>Вакансии</div></a>
-            <a href="#"><div id="menu-account" class="menu-item hide"><div class="icon icon-user filter-white" style="margin-right: 10px;"></div>Личный кабинет</div></a>
-
-            <a href="../index.html"><div id="menu-main-mini" class="menu-item only-icon"><div class="icon icon-home filter-white"></div></div></a>
-            <a href="#"><div id="menu-catalog-mini" class="menu-item only-icon hide"><div class="icon icon-home-purchasing-2 filter-white"></div></div></a>
-            <a href="#"><div id="menu-investing-mini" class="menu-item only-icon hide"><div class="icon icon-growth filter-white"></div></div></a>
-            <a href="#"><div id="menu-contacts-mini" class="menu-item only-icon current"><div class="icon icon-call-point-2 filter-white"></div></div></a>
-            <a href="./vacancies.html"><div id="menu-vacancies-mini" class="menu-item only-icon "><div class="icon icon-job filter-white"></div></div></a>
-            <a href="#"><div id="menu-account-mini" class="menu-item only-icon hide"><div class="icon icon-user filter-white"></div></div></a>
-        </div>
-    </div>
+    <div id="header" class="header" include-html="./header.html"></div>
 
     <div id="contacts-main" class="slide slide-darkblue" style="background-image: url('../images/photo_dark-wall-empty-room-with-plants-floor-3d-rendering_1080.jpg'); background-position: center; background-size: cover; text-align: center;">
         <div id="contacts-content-main" class="content">
@@ -93,16 +76,16 @@
                         </div>Телефон
                     </div></br>
                     <div class="sub-content" data-aos="fade-up" data-aos-delay="350" style="margin-bottom: 36px; vertical-align: middle;">
-                        <div class="text-in-circle-rectangle" style="display: inline-block"><div id="contacts-number" style="display: inline-block">+7 953 266-07-98</div><div id="copy-number" class="icon-copy filter-white" style="height: 100%" onclick="clipboardCopy('contacts-number')"></div></div>
+                        <div class="text-in-circle-rectangle" style="display: inline-block"><div id="contacts-number" style="display: inline-block">+7 995 150-23-80</div><div id="copy-number" class="icon-copy filter-white" style="height: 100%" onclick="clipboardCopy('contacts-number')"></div></div>
                         <div class="contact-icons" style="position: relative; display: inline-block; width: fit-content;">
                             <div class="icon-container">
-                                <a href="https://api.whatsapp.com/send?phone='+7 953 266-07-98'" target="_blank" title="Связаться через WhatsApp"><div class="icon-whatsapp-color"></div></a>
+                                <a href="https://api.whatsapp.com/send?phone='+7 995 150-23-80'" target="_blank" title="Связаться через WhatsApp"><div class="icon-whatsapp-color"></div></a>
                             </div>
                             <div class="icon-container">
-                                <a href="https://t.me/alexsnitol" target="_blank" title="Связаться через Telegram"><div class="icon-telegram-color"></div></a>
+                                <a href="https://t.me/" target="_blank" title="Связаться через Telegram"><div class="icon-telegram-color"></div></a>
                             </div>
-                            <div class="icon-container">
-                                <a href="viber://chat?number=+79532660798" title="Для связи через Viber должно быть установленно приложение"><div class="icon-viber-color"></div></a>
+                            <div class="icon-container hide">
+                                <a href="viber://chat?number=+79951502380" title="Для связи через Viber должно быть установленно приложение"><div class="icon-viber-color"></div></a>
                             </div>
                         </div>
                     </div>
@@ -136,17 +119,9 @@
             </div>
         </div>
     </div>
-    <div class="bottom" id="bottom">
-        <div class="bottom-flex-item-left">
-            <a href="../index.html">Главная</a></br>
-            <a href="#">Контакты</a></br>
-            <a href="./vacancies.html">Вакансии</a>
-        </div>
-        <div class="bottom-flex-item-right">
-            © 2021 ООО “ИНЕРИ”</br>
-            Все права защищены.</br>
-            developer: @alexsnitol
-        </div>
-    </div>
+    <div include-html="./footer.html" class="footer" id="footer"></div>
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html>

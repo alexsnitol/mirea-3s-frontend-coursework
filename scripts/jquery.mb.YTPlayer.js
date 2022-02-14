@@ -163,13 +163,13 @@ function iOSversion() {
       
       /**
        showControls (bool)
-       shows the control bar at the bottom of the containment
+       shows the control bar at the footer.html of the containment
        */
       showControls: true,
       
       /**
        anchor (string)
-       center,top,bottom,left,right combined in pair
+       center,top,footer.html,left,right combined in pair
        */
       anchor: "center,center",
       
@@ -2571,7 +2571,7 @@ function iOSversion() {
   /**
    * optimizeDisplay
    * @param anchor
-   * can be center, top, bottom, right, left; (default is center,center)
+   * can be center, top, footer.html, right, left; (default is center,center)
    */
   jQuery.fn.optimizeDisplay = function (anchor, abundanceX) {
     var YTPlayer = this.get(0);

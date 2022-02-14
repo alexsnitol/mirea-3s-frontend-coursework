@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../images/icon_INERI_1.svg" type="image/x-icon">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script src="../scripts/includeHTML.js"></script>
     <script src="../scripts/scrolling.js"></script>
 </head>
 <body>
@@ -55,24 +55,7 @@
         });
     </script>
 
-    <div class="header">
-        <div class="logo logo-INERI" id="logo">ИНЕРИ</div>
-        <div class="menu">
-            <a href="../index.html"><div id="menu-main" class="menu-item"><div class="icon icon-home filter-white" style="margin-right: 10px;"></div>Главная</div></a>
-            <a href="#"><div id="menu-catalog" class="menu-item hide"><div class="icon icon-home-purchasing-2 filter-white" style="margin-right: 10px;"></div>Каталог</div></a>
-            <a href="#"><div id="menu-investing" class="menu-item hide"><div class="icon icon-growth filter-white" style="margin-right: 10px;"></div>Инвестиции</div></a>
-            <a href="./contacts.html"><div id="menu-contacts" class="menu-item"><div class="icon icon-call-point-2 filter-white" style="margin-right: 10px;"></div>Контакты</div></a>
-            <a href="#"><div id="menu-vacancies" class="menu-item current"><div class="icon icon-job filter-white" style="margin-right: 10px;"></div>Вакансии</div></a>
-            <a href="#"><div id="menu-account" class="menu-item hide"><div class="icon icon-user filter-white" style="margin-right: 10px;"></div>Личный кабинет</div></a>
-
-            <a href="../index.html"><div id="menu-main-mini" class="menu-item only-icon"><div class="icon icon-home filter-white"></div></div></a>
-            <a href="#"><div id="menu-catalog-mini" class="menu-item only-icon hide"><div class="icon icon-home-purchasing-2 filter-white"></div></div></a>
-            <a href="#"><div id="menu-investing-mini" class="menu-item only-icon hide"><div class="icon icon-growth filter-white"></div></div></a>
-            <a href="./contacts.html"><div id="menu-contacts-mini" class="menu-item only-icon"><div class="icon icon-call-point-2 filter-white"></div></div></a>
-            <a href="#"><div id="menu-vacancies-mini" class="menu-item only-icon current"><div class="icon icon-job filter-white"></div></div></a>
-            <a href="#"><div id="menu-account-mini" class="menu-item only-icon hide"><div class="icon icon-user filter-white"></div></div></a>
-        </div>
-    </div>
+    <div id="header" class="header" include-html="./header.html"></div>
 
     <div id="vacancies-main" class="bg-darkblue">
         <div id="vacancies-main-content" class="content">
@@ -80,140 +63,29 @@
             <div id="vacancies-main-content-list" style="position: relative; top: 15%">
                 <div class="list-element" data-aos="fade-up" data-aos-delay="300">
                     <div class="first-row-flex">
-                        <div class="name"><a href="./vacancies/1_broker_po_nedvigimosti.html">Брокер по недвижимости</a></div>
+                        <div class="name"><a href="./vacancies/3_agent_po_prodage_giloy_nedvigimosti.html">Агент по продаже жилой недвижимости</a></div>
                         <div class="location">Москва</div>
                     </div>
                     <div class="second-row-flex">
                         <div class="keywords">
-                            <div class="keyword">Опыт работы 1–3 года</div>
-                            <div class="keyword">Клиентоориентированность</div>
-                            <div class="keyword">Первичная недвижимость</div>
-                            <div class="keyword">Загородная недвижимость</div>
-                            <div class="keyword">Брокер</div>
+                            <div class="keyword">Ведение переговоров</div>
+                            <div class="keyword">Консультирование клиентов</div>
+                            <div class="keyword">Подбор и организация показов</div>
+                            <div class="keyword">Сопровождение клиента</div>
+                            <div class="keyword">Умение вести переговоры</div>
+                            <div class="keyword">Уверенный пользователь ПК</div>
                         </div>
                         <div class="salary">
-                            <div class="salary-content">от 300 тыс. руб. на руки</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="list-element" data-aos="fade-up" data-aos-delay="350">
-                    <div class="first-row-flex">
-                        <div class="name"><a href="./vacancies/2_operator_call_centra.html">Оператор call-центра</a></div>
-                        <div class="location">Удалённая работа</div>
-                    </div>
-                    <div class="second-row-flex">
-                        <div class="keywords">
-                            <div class="keyword">Входящие звонки</div>
-                            <div class="keyword">Консультирование клиентов по телефону</div>
-                            <div class="keyword">Исходящие звонки</div>
-                        </div>
-                        <div class="salary">
-                            <div class="salary-content">до 40 000 руб. на руки</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="list-element" data-aos="fade-up" data-aos-delay="400">
-                    <div class="first-row-flex">
-                        <div class="name"><a href="#">Пример записи</a></div>
-                        <div class="location">Локация</div>
-                    </div>
-                    <div class="second-row-flex">
-                        <div class="keywords">
-                            <div class="keyword">Ключевое слово 1</div>
-                            <div class="keyword">Ключевое слово 2</div>
-                            <div class="keyword">Ключевое слово 3</div>
-                        </div>
-                        <div class="salary">
-                            <div class="salary-content">Зарплата</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="list-element" data-aos="fade-up" data-aos-delay="450">
-                    <div class="first-row-flex">
-                        <div class="name"><a href="#">Пример записи</a></div>
-                        <div class="location">Локация</div>
-                    </div>
-                    <div class="second-row-flex">
-                        <div class="keywords">
-                            <div class="keyword">Ключевое слово 1</div>
-                            <div class="keyword">Ключевое слово 2</div>
-                            <div class="keyword">Ключевое слово 3</div>
-                            <div class="keyword">Ключевое слово 4</div>
-                        </div>
-                        <div class="salary">
-                            <div class="salary-content">Зарплата</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="list-element" data-aos="fade-up" data-aos-delay="300">
-                    <div class="first-row-flex">
-                        <div class="name"><a href="#">Пример записи</a></div>
-                        <div class="location">Локация</div>
-                    </div>
-                    <div class="second-row-flex">
-                        <div class="keywords">
-                            <div class="keyword">Ключевое слово 1</div>
-                            <div class="keyword">Ключевое слово 2</div>
-                            <div class="keyword">Ключевое слово 3</div>
-                            <div class="keyword">Ключевое слово 4</div>
-                            <div class="keyword">Ключевое слово 5</div>
-                        </div>
-                        <div class="salary">
-                            <div class="salary-content">Зарплата</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="list-element" data-aos="fade-up" data-aos-delay="300">
-                    <div class="first-row-flex">
-                        <div class="name"><a href="#">Пример записи</a></div>
-                        <div class="location">Локация</div>
-                    </div>
-                    <div class="second-row-flex">
-                        <div class="keywords">
-                            <div class="keyword">Ключевое слово 1</div>
-                            <div class="keyword">Ключевое слово 2</div>
-                        </div>
-                        <div class="salary">
-                            <div class="salary-content">Зарплата</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="list-element" data-aos="fade-up" data-aos-delay="300">
-                    <div class="first-row-flex">
-                        <div class="name"><a href="#">Пример записи</a></div>
-                        <div class="location">Локация</div>
-                    </div>
-                    <div class="second-row-flex">
-                        <div class="keywords">
-                            <div class="keyword">Ключевое слово 1</div>
-                            <div class="keyword">Ключевое слово 2</div>
-                            <div class="keyword">Ключевое слово 3</div>
-                        </div>
-                        <div class="salary">
-                            <div class="salary-content">Зарплата</div>
+                            <div class="salary-content">от 50 000 руб. до 200 000 руб. в месяц</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bottom" id="bottom">
-        <div class="bottom-flex-item-left">
-            <a href="../index.html">Главная</a></br>
-            <a href="./contacts.html">Контакты</a></br>
-            <a href="#">Вакансии</a>
-        </div>
-        <div class="bottom-flex-item-right">
-            © 2021 ООО “ИНЕРИ”</br>
-            Все права защищены.</br>
-            developer: @alexsnitol
-        </div>
-    </div>
+    <div include-html="footer.html" class="footer" id="footer"></div>
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html>
