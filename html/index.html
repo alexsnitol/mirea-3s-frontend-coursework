@@ -56,7 +56,7 @@
             });
         });
 
-        $( () => {
+        /*$( () => {
             $('#slide2-form-exit').on('click', () => {
                 $('#slide2-form').css({'display': 'none'});
                 $('#slide2-form').css({'opacity': '0'});
@@ -70,12 +70,12 @@
                 $('#slide2-form').css({'opacity': '1'});
                 $('body').css({'overflow': 'hidden'});
             });
-        });
+        });*/
     </script>
 
     <div id="header" class="header" include-html="./header.html"></div>
 
-    <div id="slide2-form" class="form">
+    <div id="slide2-form" class="form hide">
         <form action="mailto:sslotin74@gmail.com" enctype="text/plain" method="post">
             <div class="form-content">
                 <div class="row-name">
@@ -121,7 +121,7 @@
                 </div>
                 <div class="row" style="text-align: center">
                     <div style="display: inline-block; width: 100%">
-                        <button type="submit" id="index-form1-button-send" class="button-right-icon-type-0">Отправить анкету<div class="icon icon-send-h2 filter-white"></div></button>
+                        <button type="submit" id="index-form1-button-send" class="button button-right-icon-type-0">Отправить анкету<div class="icon icon-send-h2 filter-white"></div></button>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@
     </div>
 
     <!-- 1. Главный слайд -->
-    <div id="slide1" class="slide slide-main-video">
+    <div id="slide1" class="slide slide-main-video" style="background-image: url('../images/photo_moscow_darkblue_1080.jpg'); background-position: center; background-size: cover;">
         <div class="header-block"></div>
         <div class="flex-container-center">
             <div id="content-slide1" class="content">
@@ -139,7 +139,7 @@
                     сбережения в недвижимость</div>
                 </div>
 
-                <div href="#slide2" id="index-button1" class="button-right-icon-type-0 animate-push-me" data-aos="zoom-in" data-aos-delay="2000">Узнать как<div class="icon icon-down filter-white"></div></div>
+                <div href="#slide2" id="index-button1" class="button button-right-icon-type-0 animate-push-me" data-aos="zoom-in" data-aos-delay="2000">Узнать как<div class="icon icon-down filter-white"></div></div>
 
                 <script type="text/javascript">
                     $( () => {
@@ -153,10 +153,12 @@
                 </script>
             </div>
         </div>
+        <!--
         <div class="player" data-property="{videoURL:'S_dfq9rFWAE', ratio:'auto', mask:'./images/photo_moscow_1080.jpg', abundance:.3, anchor:'center,center', startAt: 9, stopAt:145, containment:'#slide1', showControls:false, autoPlay:true, loop:true, mute:true, opacity:1, addRaster:true, playOnlyIfVisible:false, stopMovieOnBlur:false, quality:'default', addFilters:{grayscale: 0, sepia: 0, contrast: 0, saturate: 0, brightness: 0, blur: 1, opacity: 60}}"></div>
         <script>
             jQuery(".player").YTPlayer({useOnMobile:true, mobileFallbackImage:"./images/photo_moscow_1080.jpg"});
         </script>
+        -->
     </div>
 
     <!-- 2. Оказываем услуги по продаже и аренде -->
@@ -168,11 +170,14 @@
                 <div class="sub-content">
                     <div class="title" data-aos="fade-up">Оказываем услуги по покупке, продаже и аренде</br>
                     жилой и коммерческой недвижимости</div>
+                    <!--<div class="comment" data-aos="fade-up" style="color: #EDEEF0; margin-top: 3vh">Для уточнения рыночной стоимости или арендной ставки вашего объекта,</br>
+                    можете заполнить анкету и наши специалисты ответят Вам.</div>-->
                     <div class="comment" data-aos="fade-up" style="color: #EDEEF0; margin-top: 3vh">Для уточнения рыночной стоимости или арендной ставки вашего объекта,</br>
-                    можете заполнить анкету и наши специалисты ответят Вам.</div>
+                        можете связаться с нами и наши специалисты ответят Вам.</div>
                 </div>
 
-                <div id="index-button2" style="margin-top: 15vh;" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="1000"><div class="icon icon-list filter-white"></div>Заполнить анкету</div>
+                <!--<div id="index-button2" style="margin-top: 15vh;" class="button button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="1000"><div class="icon icon-list filter-white"></div>Заполнить анкету</div>-->
+                <a href="contacts.html"><div id="index-button2" style="margin-top: 15vh;" class="button button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="1000"><div class="icon icon-call filter-white"></div>Связаться с нами</div></a>
             </div>
         </div>
     </div>
@@ -198,7 +203,7 @@
                 </div>
 
                 <div id="container-button3-1">
-                    <a href="contacts.html"><div id="index-button3" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2500"><div class="icon icon-call filter-white"></div>Получить консультацию</div></a>
+                    <a href="contacts.html"><div id="index-button3" class="button button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2500"><div class="icon icon-call filter-white"></div>Получить консультацию</div></a>
                 </div>
             </div>
         </div>
@@ -248,7 +253,7 @@
                     <div class="comment" data-aos="fade-up" style="color: #EDEEF0; margin-top: 3vh">Для предложения своих объектов недвижимости свяжитесь с нашим менеджером и обсудите все условия.</div>
                 </div>
 
-                <a href="contacts.html" style="margin-top: 15vh;"><div id="index-button4" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500" style="position: relative; top: 0%;"><div class="icon icon-call filter-white"></div>Узнать все условия</div></a>
+                <a href="contacts.html" style="margin-top: 15vh;"><div id="index-button4" class="button button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500" style="position: relative; top: 0%;"><div class="icon icon-call filter-white"></div>Узнать все условия</div></a>
             </div>
         </div>
     </div>
@@ -259,13 +264,13 @@
         <div class="flex-container-center">
             <div id="content-slide6" class="content">
                 <div class="sub-content">
-                    <image data-aos="zoom-out-up" data-aos-delay="400" src="./images/icon_Bank_success_color.svg"></image>
+                    <image data-aos="zoom-out-up" data-aos-delay="400" src="../images/icon_Bank_success_color.svg"></image>
                     <div class="title black" data-aos="fade-up" style="margin-top: 1vh;">С нами ипотека проще</div>
                     <div class="subtitle2 text-dark-turquoise" data-aos-delay="1200" data-aos="fade-up" style="margin-top: 2vh;">Оказываем помощь в одобрении ипотеки</br>
                         различных банков с пониженной ставкой</div>
                 </div>
 
-                <a href="contacts.html"><div id="index-button6" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2000"><div class="icon icon-call filter-white"></div>Получить консультацию</div></a>
+                <a href="contacts.html"><div id="index-button6" class="button button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="2000"><div class="icon icon-call filter-white"></div>Получить консультацию</div></a>
             </div>
         </div>
     </div>
@@ -283,7 +288,7 @@
                 </div>
 
                 <div id="container-button7-1" style="margin-top: 15vh;">
-                    <a href="contacts.html"><div id="index-button7" class="button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500"><div class="icon icon-call filter-white"></div>Связаться с нами</div></a>
+                    <a href="contacts.html"><div id="index-button7" class="button button-left-icon-type-0" data-aos="zoom-in" data-aos-delay="500"><div class="icon icon-call filter-white"></div>Связаться с нами</div></a>
                 </div>
             </div>
         </div>
