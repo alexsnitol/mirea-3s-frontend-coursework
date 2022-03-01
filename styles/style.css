@@ -188,6 +188,14 @@ select {
 
     background: #129DFF;
 
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
     transition: 0.1s;
 }
 
@@ -275,6 +283,16 @@ select {
     letter-spacing: 0;
     color: #F4F4F4;
     text-align: left;
+}
+
+.icon {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .heading-with-icon .icon-container {
@@ -379,21 +397,36 @@ select {
     height: 225px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     font-size: 16px;
     font-weight: 600;
     text-align: left;
     line-height: 1.5;
+
+    margin: 40px 0 40px 0;
 }
 
-.footer-flex-item-left {
-    padding: 40px 1% 40px 15%;
-    flex: 50%;
+.footer-container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    width: 70%;
 }
 
-.footer-flex-item-right {
-    padding: 40px 1% 40px 15%;
-    flex: 50%;
+.footer-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+.footer-item {
+    padding: 10px 0 0 0;
+}
+
+.footer > .footer-item {
+    width: 70%;
 }
 
 .circle-border {
@@ -405,6 +438,16 @@ select {
     color: #F4F4F4;
 
     background-color: rgba(18, 157, 255, 0.8);;
+}
+
+.button {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .button-right-icon-type-0 {
@@ -772,7 +815,7 @@ select {
 
     line-height: 23.48px;
 
-    text-align: left;
+    text-align: justify;
     font-size: 20px;
     font-weight: 500;
 }
@@ -914,6 +957,31 @@ select {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-item {}
 
 .playerBox {
     background: #000;
@@ -1101,7 +1169,7 @@ select {
 
 /* 000000 */
 .filter-black {
-    filter: invert(0%) sepia(0%) saturate(11%) hue-rotate(250deg) brightness(103%) contrast(104%);
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(250deg) brightness(0%) contrast(100%);
 }
 
 
@@ -1148,6 +1216,14 @@ select {
     position: relative;
     display: inline-block;
     vertical-align: middle;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 
     transition: 0.2s;
 }
@@ -1519,7 +1595,7 @@ select {
         font-size: 16px;
     }
 
-    .footer {
+    .footer-container-row {
         flex-direction: column;
         font-size: 14px;
         padding: 0;
