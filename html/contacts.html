@@ -8,10 +8,15 @@
     <link href="../styles/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="../images/icon_INERI_1.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale-subtle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../scripts/includeHTML.js"></script>
     <script src="../scripts/scrolling.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 </head>
 <body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -76,7 +81,18 @@
                         </div>Телефон
                     </div></br>
                     <div class="sub-content" data-aos="fade-up" data-aos-delay="350" style="margin-bottom: 36px; vertical-align: middle;">
-                        <div class="text-in-circle-rectangle" style="display: inline-block"><div id="contacts-number" style="display: inline-block">+7 995 150-23-80</div><div id="copy-number" class="icon icon-copy filter-white" style="height: 100%" onclick="clipboardCopy('contacts-number')"></div></div>
+                        <div class="text-in-circle-rectangle" style="display: inline-block">
+                            <div id="contacts-number" style="display: inline-block">+7 995 150-23-80</div>
+                            <div id="copy-number" class="icon icon-copy filter-white" style="height: 100%" onclick="clipboardCopy('contacts-number')"></div>
+                            <script>
+                                tippy('#copy-number', {
+                                    content: 'Скопировано!',
+                                    animation: 'scale-subtle',
+                                    theme: 'light',
+                                    trigger: 'click',
+                                });
+                            </script>
+                        </div>
                         <div class="contact-icons" style="position: relative; display: inline-block; width: fit-content;">
                             <div class="icon-container">
                                 <a href="https://api.whatsapp.com/send?phone='+7 995 150-23-80'" target="_blank" title="Связаться через WhatsApp"><div class="icon-whatsapp-color"></div></a>
@@ -96,7 +112,18 @@
                         </div>Почта
                     </div></br>
                     <div class="sub-content" data-aos="fade-up" data-aos-delay="450" style="margin-bottom: 36px">
-                        <div class="text-in-circle-rectangle" style="display: inline-block"><div id="contacts-email" style="display: inline-block">er-ineri@mail.ru</div><div id="copy-email" class="icon icon-copy filter-white" style="height: 100%" onclick="clipboardCopy('contacts-email')"></div></div>
+                        <div class="text-in-circle-rectangle" style="display: inline-block">
+                            <div id="contacts-email" style="display: inline-block">er-ineri@mail.ru</div>
+                            <div id="copy-email" class="icon icon-copy filter-white" style="height: 100%" onclick="clipboardCopy('contacts-email')"></div>
+                            <script>
+                                tippy('#copy-email', {
+                                    content: 'Скопировано!',
+                                    animation: 'scale-subtle',
+                                    theme: 'light',
+                                    trigger: 'click',
+                                });
+                            </script>
+                        </div>
                         <div class="contact-icons" style="position: relative; display: inline-block; width: fit-content;">
                             <div class="icon-container">
                                 <a href="mailto:er-ineri@mail.ru" target="_blank" title="Открыть почту"><div class="icon-mail-sending-color" style="padding-top: 18%"></div></a>
